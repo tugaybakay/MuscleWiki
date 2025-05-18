@@ -29,7 +29,7 @@ const Search = () => {
     isFetched,
   } = useQuery({
     queryKey: ['searchExercises', searchTerm],
-    queryFn: () => fetchExercisesByName(searchTerm),
+    queryFn: () => fetchExercisesByName(searchTerm.toLowerCase()),
     enabled: !!searchTerm,
   });
 

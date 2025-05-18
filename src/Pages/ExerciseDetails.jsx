@@ -57,7 +57,7 @@ const ExerciseDetails = () => {
       <div className="bg-white w-full max-w-4xl rounded-2xl shadow-lg overflow-hidden mb-16">
         {/* Başlık ve yıldız */}
         <div className="flex items-center justify-between bg-blue-600 px-6 py-4">
-          <h2 className="text-white text-3xl font-semibold max-sm:text-2xl">{exercise.name}</h2>
+          <h2 className="text-white text-3xl font-semibold max-sm:text-xl">{exercise.name}</h2>
           <img
             src={isFavorite ? "/yellow-star.png" : "/white-star.svg"}
             alt="Favorite Star"
