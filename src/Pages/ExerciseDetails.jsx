@@ -74,17 +74,17 @@ const ExerciseDetails = () => {
         {/* Bilgiler */}
         <div className="px-6 py-4 space-y-4">
           <div>
-            <h3 className="text-2xl font-bold text-blue-700 mb-1 p-2 rounded-2xl bg-gray-100">Target Muscle</h3>
+            <h3 className="text-2xl font-bold text-blue-700 mb-1 p-2 rounded-2xl bg-gray-100 max-sm:text-xl">Target Muscle</h3>
             <p className="text-gray-700 capitalize text-lg pl-2">{exercise.target}</p>
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-blue-700 mb-1 p-2 rounded-2xl bg-gray-100">Equipment</h3>
+            <h3 className="text-2xl font-bold text-blue-700 mb-1 p-2 rounded-2xl bg-gray-100 max-sm:text-xl">Equipment</h3>
             <p className="text-gray-700 capitalize text-lg pl-2">{exercise.equipment}</p>
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-blue-700 mb-1 p-2 rounded-2xl bg-gray-100">Secondary Muscles</h3>
+            <h3 className="text-2xl font-bold text-blue-700 mb-1 p-2 rounded-2xl bg-gray-100 max-sm:text-xl">Secondary Muscles</h3>
             <ul className="list-disc list-inside text-gray-700 capitalize text-lg marker:text-blue-600 pl-2">
               {exercise.secondaryMuscles.map((muscle, index) => (
                 <li key={index}>{muscle}</li>
@@ -93,7 +93,7 @@ const ExerciseDetails = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-blue-700 mb-2 p-2 rounded-2xl bg-gray-100">Instructions</h3>
+            <h3 className="text-2xl font-bold text-blue-700 mb-2 p-2 rounded-2xl bg-gray-100 max-sm:text-xl">Instructions</h3>
             <ul className="space-y-2 pl-2">
               {exercise.instructions.map((step, index) => (
                 <li key={index} className="flex items-start gap-3">
