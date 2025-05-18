@@ -6,6 +6,7 @@ import Exercises from './Pages/Exercises.jsx';
 import ExerciseDetails from './Pages/ExerciseDetails.jsx';
 import FavoriteExercises from './Pages/FavoriteExercises.jsx';
 import Search from "./Pages/Search.jsx";
+import { HashRouter } from "react-router-dom";
 
 const App = () => {
   return (
@@ -13,13 +14,15 @@ const App = () => {
       <div className="min-h-screen relative flex flex-col">
         <Navbar/>
 
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path='/bodyparts/:bodypart' element={<Exercises/>}/>
-        <Route path='/exercises/:exerciseid' element={<ExerciseDetails/>} />
-        <Route path='/favorites' element={<FavoriteExercises/>}/>
-        <Route path='/search' element={<Search/>}/>
-      </Routes>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path='/bodyparts/:bodypart' element={<Exercises/>}/>
+          <Route path='/exercises/:exerciseid' element={<ExerciseDetails/>} />
+          <Route path='/favorites' element={<FavoriteExercises/>}/>
+          <Route path='/search' element={<Search/>}/>
+        </Routes>
+      </HashRouter>
       <Footer/>
       </div>
     </Router>
