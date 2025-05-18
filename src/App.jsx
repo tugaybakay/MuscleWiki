@@ -14,15 +14,13 @@ const App = () => {
       <div className="min-h-screen relative flex flex-col">
         <Navbar/>
 
-      <HashRouter>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path='/bodyparts/:bodypart' element={<Exercises/>}/>
-          <Route path='/exercises/:exerciseid' element={<ExerciseDetails/>} />
-          <Route path='/favorites' element={<FavoriteExercises/>}/>
-          <Route path='/search' element={<Search/>}/>
-        </Routes>
-      </HashRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path='/bodyparts/:bodypart' element={<Exercises/>}/>
+        <Route path='/exercises/:exerciseid' element={<ExerciseDetails/>} />
+        <Route path='/favorites' element={<FavoriteExercises/>}/>
+        <Route path='/search' element={<Search/>}/>
+      </Routes>
       <Footer/>
       </div>
     </Router>
