@@ -1,6 +1,6 @@
 # 🏋️ Muscle Wiki
 
-[Click to see App](https://muscle-wiki.vercel.app/)
+[Click here to view the app](https://muscle-wiki.vercel.app/)
 
 A responsive and interactive exercise browser built with **React.js** and **Vite**. The app allows users to discover exercises by body part, search functionality, and view detailed exercise information. Users can also save favorite exercises using `localStorage`.
 
