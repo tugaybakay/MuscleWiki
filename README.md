@@ -1,4 +1,4 @@
-# 🏋️ Exercise Explorer
+# 🏋️ Muscle Wiki
 
 A responsive and interactive exercise browser built with **React.js** and **Vite**. The app allows users to discover exercises by body part, search functionality, and view detailed exercise information. Users can also save favorite exercises using `localStorage`.
 
