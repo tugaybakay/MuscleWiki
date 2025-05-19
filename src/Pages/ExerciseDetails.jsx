@@ -30,11 +30,9 @@ const ExerciseDetails = () => {
     let updatedFavorites;
 
     if (favorites.includes(exerciseid)) {
-      // Favoriden çıkar
       updatedFavorites = favorites.filter(id => id !== exerciseid);
       setIsFavorite(false);
     } else {
-      // Favoriye ekle
       updatedFavorites = [...favorites, exerciseid];
       setIsFavorite(true);
     }
@@ -55,7 +53,6 @@ const ExerciseDetails = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center px-4 py-10">
       <div className="bg-white w-full max-w-4xl rounded-2xl shadow-lg overflow-hidden mb-16">
-        {/* Başlık ve yıldız */}
         <div className="flex items-center justify-between bg-blue-600 px-6 py-4">
           <h2 className="text-white text-3xl font-semibold max-sm:text-xl">{exercise.name}</h2>
           <img
@@ -66,25 +63,23 @@ const ExerciseDetails = () => {
           />
         </div>
 
-        {/* Egzersiz GIF */}
         <div className="w-full p-4 flex justify-center">
           <img src={exercise.gifUrl} alt={exercise.name} className="rounded-lg max-h-96 object-contain" />
         </div>
 
-        {/* Bilgiler */}
         <div className="px-6 py-4 space-y-4">
           <div>
-            <h3 className="text-2xl font-bold text-blue-700 mb-1 p-2 rounded-2xl bg-gray-100 max-sm:text-xl">Target Muscle</h3>
+            <h3 className="details-header">Target Muscle</h3>
             <p className="text-gray-700 capitalize text-lg pl-2">{exercise.target}</p>
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-blue-700 mb-1 p-2 rounded-2xl bg-gray-100 max-sm:text-xl">Equipment</h3>
+            <h3 className="details-header">Equipment</h3>
             <p className="text-gray-700 capitalize text-lg pl-2">{exercise.equipment}</p>
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-blue-700 mb-1 p-2 rounded-2xl bg-gray-100 max-sm:text-xl">Secondary Muscles</h3>
+            <h3 className="details-header">Secondary Muscles</h3>
             <ul className="list-disc list-inside text-gray-700 capitalize text-lg marker:text-blue-600 pl-2">
               {exercise.secondaryMuscles.map((muscle, index) => (
                 <li key={index}>{muscle}</li>
@@ -93,7 +88,7 @@ const ExerciseDetails = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-blue-700 mb-2 p-2 rounded-2xl bg-gray-100 max-sm:text-xl">Instructions</h3>
+            <h3 className="details-header">Instructions</h3>
             <ul className="space-y-2 pl-2">
               {exercise.instructions.map((step, index) => (
                 <li key={index} className="flex items-start gap-3">

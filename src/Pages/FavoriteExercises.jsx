@@ -1,4 +1,3 @@
-import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { fetchExercisesByIds } from '../HelperFuncs/APIServiceFuncs';
 import ExercisesLoading from '../Components/Exercises/ExercisesLoading';

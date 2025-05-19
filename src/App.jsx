@@ -6,7 +6,6 @@ import Exercises from './Pages/Exercises.jsx';
 import ExerciseDetails from './Pages/ExerciseDetails.jsx';
 import FavoriteExercises from './Pages/FavoriteExercises.jsx';
 import Search from "./Pages/Search.jsx";
-import { HashRouter } from "react-router-dom";
 
 const App = () => {
   return (

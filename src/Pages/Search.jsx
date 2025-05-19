@@ -35,7 +35,6 @@ const Search = () => {
 
   return (
     <div className="bg-gray-100 p-8 grow">
-      {/* Search bar with Formik */}
       <form onSubmit={formik.handleSubmit} className="flex flex-col items-center gap-2 mb-8">
         <div className="flex gap-2 w-full max-w-xl">
           <input
@@ -59,7 +58,6 @@ const Search = () => {
         )}
       </form>
 
-      {/* Conditional content */}
       {!isFetched && (
         <div className="text-center text-blue-600 text-lg mt-20">
           Please enter the name of the exercise you want to search

@@ -24,10 +24,9 @@ export const fetchBodyPartList = async () => {
  */
 
 /**
- * Belirli bir kas grubuna göre egzersizleri getirir.
  * 
- * @param {string} bodyPart - Hedef kas grubu (örneğin: "chest", "legs").
- * @returns {Promise<Exercise[]>} - Egzersiz listesini döner.
+ * @param {string} bodyPart 
+ * @returns {Promise<Exercise[]>} 
  */
 export const fetchExercisesByBodyPart = async (bodyPart) => {
   const response = await axiosInstance.get(`/exercises/bodyPart/${bodyPart}`,{
@@ -40,10 +39,10 @@ export const fetchExercisesByBodyPart = async (bodyPart) => {
 
 
 /**
- * Belirli bir egzersiz ID'sine göre egzersiz detaylarını getirir.
+ *
  * 
- * @param {string} id - Egzersizin benzersiz ID'si.
- * @returns {Promise<Exercise>} - Egzersiz detayları.
+ * @param {string} id 
+ * @returns {Promise<Exercise>} 
  */
 export const fetchExerciseById = async (id) => {
   try {
@@ -57,7 +56,7 @@ export const fetchExerciseById = async (id) => {
 
 
 /**
- * Birden fazla egzersizi ID listesi ile getirir
+ * 
  * @param {string[]} ids
  */
 export const fetchExercisesByIds = async (ids) => {
@@ -67,9 +66,9 @@ export const fetchExercisesByIds = async (ids) => {
 };
 
 /**
- * Belirli bir isimle egzersizleri getirir.
+ * 
  *
- * @param {string} name - Egzersiz ismi (örn: "push", "curl").
+ * @param {string} name 
  * @returns {Promise<Exercise[]>}
  */
 export const fetchExercisesByName = async (name) => {
